@@ -78,7 +78,7 @@ python3 alternative_reduce.py '#doctor' '#nurse' '#hospital' '#sneeze' '#cough' 
 ```
 <img src=hashtag_trends_doctor_nurse_hospital_sneeze_cough_sick_flu_virus_.png width=100% />
 
-Finding: '#corona', '#coronavirus', and '#covid19' are the most popular hashtags
+It can be seen that '#corona', '#coronavirus', and '#covid19' are the most popular hashtags
 
 ```
 python3 alternative.py '#corona', '#coronavirus', 'covid19'
