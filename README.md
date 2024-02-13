@@ -32,37 +32,38 @@ The project resulted in four key visualizations, each offering insights into how
 
 ### Language Distribution of Hashtags
 
+- Frequency of `#coronavirus` mentions in 2020 (Top 10 Languages).
+
 ```
 $ ./src/visualize.py --input_path=reduced.lang --key='#coronavirus'
 ```
 
-- Frequency of `#coronavirus` mentions in 2020 (Top 10 Languages).
-
 <img src=reduced_coronavirus_language_distribution.png width=100% />
+
+- Frequency of `#코로나바이러스`  (the Korean equivalent of #coronavirus) mentions in 2020 (Top 10 Languages).
 
 ```
 $ ./src/visualize.py --input_path=reduced.lang --key='#코로나바이러스'
 ```
-
-- Frequency of `#코로나바이러스`  (the Korean equivalent of #coronavirus) mentions in 2020 (Top 10 Languages).
 
 <img src=reduced_코로나바이러스_language_distribution.png width=100% />
 
 
 ### Country Distribution of Hashtags
 
+- Frequency of `#coronavirus` mentions in 2020 (Top 10 Countries).
+
 ```
 $ ./src/visualize.py --input_path=reduced.country --key='#coronavirus'
 ```
 
-- Frequency of `#coronavirus` mentions in 2020 (Top 10 Countries).
-
 <img src=reduced_coronavirus_country_distribution.png width=100% />
+
+- Frequency of `#코로나바이러스`  (the Korean equivalent of #coronavirus) mentions in 2020 (Top 10 Countries).
 
 ```
 $ ./src/visualize.py --input_path=reduced.country --key='#코로나바이러스'
 ```
-- Frequency of `#코로나바이러스`  (the Korean equivalent of #coronavirus) mentions in 2020 (Top 10 Countries).
     
 <img src=reduced_코로나바이러스_country_distribution.png width=100% />
 
@@ -79,9 +80,17 @@ python3 alternative_reduce.py '#doctor' '#nurse' '#hospital' '#sneeze' '#cough' 
 
 Finding: '#corona', '#coronavirus', and '#covid19' are the most popular hashtags
 
+```
+python3 alternative.py '#corona', '#coronavirus', 'covid19'
+```
+
 <img src=hashtag_trends_corona_coronavirus_covid19.png width=100% />
 
-If a given hashtag is not in the list of original mapped hashtags then the result will be a null line.
+If a given hashtag is not in the list of original mapped hashtags then the result will be a null line. For example, '#arsum' was not in the original list.
+
+```
+python3 alternative.py '#coronavirus' '#corona' '#arsum'
+```
 
 <img src=hashtag_trends_coronavirus_corona_arsum.png width=100% />
 
